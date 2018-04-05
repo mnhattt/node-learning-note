@@ -9,7 +9,7 @@ Viết 1 class Emitter sẽ bắt các sự kiện, mỗi sự kiện t�
 Sau khi tạo class sẽ tạo hàm lằng nghe sự kiện hàm **on\(type, listener\). **  
 Để phát ra sự kiện dùng hàm emit
 
-```js
+```javascript
 function Emitter() {
     this.event = {}
 }
@@ -53,7 +53,34 @@ for (var event of events) {
 }
 ```
 
+### 
+
+### 2. Kế thừa từ event
+
+```javascript
+// DÙNG CLASS
+'use strict'
+var EventEmitter = require('events')
+
+class Dialog extends EventEmitter {
+    constructor() {
+        super()
+        this.msg = 'hello'
+    }
+
+    sayHello(data) {
+        // console.log(`${this.msg} ${data}`);
+        this.emit('hello', data)
+    }
+}
+
+var dialog = new Dialog()
+dialog.on('hello', function (data) {
+    console.log(`${this.msg} ${data}`);
+})
+
+dialog.sayHello('nhat')
+```
 
 
-2. Kế thừa 
 
