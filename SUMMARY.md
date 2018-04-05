@@ -7,4 +7,5 @@
 * [C++ Addon](c++-addon.md)
 * Resource
 * [Async/Non-blocking IO](asyncnon-blocking-io.md)
+* [Node Core](node-core.md)
 
