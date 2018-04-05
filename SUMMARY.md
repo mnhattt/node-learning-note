@@ -5,4 +5,5 @@
 * [Stream](stream.md)
 * [C++ Addon](c++-addon.md)
 * Resource
+* [Cluster](cluster.md)
 
