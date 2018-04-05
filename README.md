@@ -5,7 +5,7 @@ Node advance
 * Event Emitter
 * Stream/Buffer
 * Process
-* Network
+* Network\(TCP\)
 * C++ Addon
 * Async/Non-blocking IO
 
