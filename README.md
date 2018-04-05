@@ -4,8 +4,8 @@ Node advance
 
 * Event Emitter
 * Stream/Buffer
-* Cluster mode
-* Network
+* Process
+* Network\(TCP\)
 * C++ Addon
 * Async/Non-blocking IO
 
