@@ -55,3 +55,5 @@ for (var event of events) {
 
 
 
+2. Kế thừa 
+
