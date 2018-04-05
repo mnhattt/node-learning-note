@@ -55,7 +55,7 @@ for (var event of events) {
 
 ### 
 
-### 2. Kế thừa từ event
+### 2. Kế thừa từ module event
 
 ```javascript
 // DÙNG CLASS
