@@ -1,3 +1,8 @@
-# First Chapter
+# Event Emitter
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+1. Tự viết event-emiiter
+2. Kế thừa
+3. Socket.IO
+
+
+
