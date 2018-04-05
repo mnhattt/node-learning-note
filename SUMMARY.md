@@ -5,7 +5,7 @@
 * [Stream](stream.md)
 * [Cluster](cluster.md)
 * [C++ Addon](c++-addon.md)
-* Resource
+* [Resource](resource.md)
 * [Async/Non-blocking IO](asyncnon-blocking-io.md)
 * [Node Core](node-core.md)
 

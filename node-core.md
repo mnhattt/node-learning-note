@@ -1,12 +1,16 @@
 # Core module
 
+các moudule chức năng như fs, http, ... viết bằng JS
+
 # Node api
 
-binding C++  addon với code js
+Một số module chạy với C++ addon được binding bằng V8 engine
 
-# V8 engine  
+http://latentflip.com/loupe/
 
-xử lý call-back loop
+# V8 engine
+
+Giả sử Node xử lý IO xong sẽ gọi hàm callback, các hàm callback sẽ được pass vào event queue cho V8 xử lý, xử lý xong sẽ pass về node lại
 
 # libuv
 
