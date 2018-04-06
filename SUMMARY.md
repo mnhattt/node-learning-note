@@ -2,10 +2,12 @@
 
 * [Introduction](README.md)
 * [Event Emitter](event-emitter.md)
+* TCP với net module
+* [Demo chat-app](demo-chat-app.md)
 * [Stream](stream.md)
-* [Respone bằng stream](vd.md)
+* [Demo respone bằng stream](vd.md)
 * [Cluster](cluster.md)
 * [Node Core](node-core.md)
 * [C++ Addon](c++-addon.md)
-* [Resource](resource.md)
+* TCP với net module
 
