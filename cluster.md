@@ -1,6 +1,8 @@
 # Cluster
 
-Giả sử chạy 1 server viết như thế này và xử lý 2 request cùng lúc thì request 1 sẽ được đáp ứng sau 5s\(duration\), còn request 2 sẽ phải sau 10s.
+Dùng cluster để xử lý các request tới bởi các tiến trình khác nhau.  
+\* Vấn đề: request tới cùng 1 route vẫn được xử lý bởi các process khác nhau nhưng thời gian xử lý rất lâu.  
+
 
 ```text
 // index.js
@@ -53,4 +55,6 @@ if (cluster.isMaster) {
     app.listen(4000)
 }
 ```
+
+
 
