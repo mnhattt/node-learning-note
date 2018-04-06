@@ -1,7 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [Event Emitter](event-emitter.md)
+* [Event Emitter 1](event-emitter.md)
+* [Event Emitter 2](event-emitter-2.md)
 * [TCP với net module](tcp-voi-net-module.md)
 * [Demo chat-app](demo-chat-app.md)
 * [Stream](stream.md)
@@ -11,5 +12,5 @@
 * [C++ Addon](c++-addon.md)
 * [TCP với net module](tcp-voi-net-module.md)
 * [Buffer](buffer.md)
-* [Process](process.md)
+* Event Emitter 2
 
