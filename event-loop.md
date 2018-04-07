@@ -29,9 +29,11 @@ Quá trình thực hiện của code sẽ là code được đưa vào ca
 -&gt; khi hàm callback được gọi sẽ đẩy qua event queue  
 -&gt; lúc này event loop sẽ xem call stack có trống không để đẩy hàm từ queue qua loop
 
-
-
 Lý do vì sao setTimeout\(0\) luôn thực thi sau setImmediate ???
 
 process.nextTick thì làm gì ???
+
+
+
+![](/assets/event-loop-2.png)
 

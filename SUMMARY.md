@@ -13,7 +13,6 @@
 * [C++ Addon](c++-addon.md)
 * [TCP với net module](tcp-voi-net-module.md)
 * [Buffer](buffer.md)
-* Event loop
 * [Demo chat-app](demo-chat-app.md)
 * [Demo respone bằng stream](vd.md)
 
