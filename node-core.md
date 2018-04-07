@@ -21,11 +21,34 @@ thử thêm một chức năng\(lệnh\) greeting vào shell
 
 ### chú ý dòng  `const binding = process.binding('');`
 
-
-
 # libuv
 
 quản lý async IO bằng thread pool
 
 ![](http://docs.libuv.org/en/v1.x/_images/architecture.png)
+
+# event loop
+
+```
+   ┌───────────────────────┐
+┌─>│        timers         │
+│  └──────────┬────────────┘
+│  ┌──────────┴────────────┐
+│  │     I/O callbacks     │
+│  └──────────┬────────────┘
+│  ┌──────────┴────────────┐
+│  │     idle, prepare     │
+│  └──────────┬────────────┘      ┌───────────────┐
+│  ┌──────────┴────────────┐      │   incoming:   │
+│  │         poll          │<─────┤  connections, │
+│  └──────────┬────────────┘      │   data, etc.  │
+│  ┌──────────┴────────────┐      └───────────────┘
+│  │        check          │
+│  └──────────┬────────────┘
+│  ┌──────────┴────────────┐
+└──┤    close callbacks    │
+   └───────────────────────┘
+```
+
+
 
