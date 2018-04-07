@@ -16,5 +16,4 @@
 * Event loop
 * [Demo chat-app](demo-chat-app.md)
 * [Demo respone bằng stream](vd.md)
-* Event loop
 
