@@ -2,7 +2,7 @@
 
 Là cơ chế quan trọng thực thi lập trình bất đồng bộ, nằm trong module libuv
 
-Event loop sẽ liên  tục quét rồi lấy ra các hàm trong callback queue, sau đó đẩy qua call stack  của V8 để thực thi.
+Event loop sẽ liên tục kiểm tra call stack, nếu call stack trống sẽ kiểm tra callback queue. Nếu có hàm trong callback queue, thì  đẩy qua call stack  của V8 để thực thi.
 
 ```
    ┌───────────────────────┐
@@ -32,8 +32,6 @@ Quá trình thực hiện của code sẽ là code được đưa vào ca
 Lý do vì sao setTimeout\(0\) luôn thực thi sau setImmediate ???
 
 process.nextTick thì làm gì ???
-
-
 
 ![](/assets/event-loop-2.png)
 

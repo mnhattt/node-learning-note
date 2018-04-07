@@ -35,8 +35,6 @@ thử thêm một chức năng\(lệnh\) greeting vào shell
 
 # libuv
 
-quản lý async IO bằng thread pool
-
 
 
 # 
