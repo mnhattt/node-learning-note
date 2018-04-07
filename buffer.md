@@ -6,5 +6,10 @@ có 3 cách để tạo buffer là
 * Buffer.alloc\(\)
 * Buffer.allocUnsafe\(\)
 
+```
+var buffer =  new ArrayBuffer(8)
+var view = new Int32Array(buffer)
+```
+
 
 

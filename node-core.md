@@ -29,6 +29,8 @@ quản lý async IO bằng thread pool
 
 # event loop
 
+nằm trong libuv
+
 ```
    ┌───────────────────────┐
 ┌─>│        timers         │
@@ -50,5 +52,5 @@ quản lý async IO bằng thread pool
    └───────────────────────┘
 ```
 
-
+![](/assets/event-loop.png)
 
