@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Event](event.md)
 * [Node Core](node-core.md)
 * [Event Emitter 1](event-emitter.md)
 * [Event Emitter 2](event-emitter-2.md)
@@ -12,5 +13,5 @@
 * [C++ Addon](c++-addon.md)
 * [TCP với net module](tcp-voi-net-module.md)
 * [Buffer](buffer.md)
-* Event Emitter 2
+* Event
 
