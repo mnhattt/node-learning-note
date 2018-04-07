@@ -1,20 +1,27 @@
+# V8 Engine
+
+V8 là một javascrpit engine dùng để biên dịch ra mã thực thi trên vi xử lý. Do được viết bằng C++ nên nó có thể được dùng độc lập hoặc được [nhúng](https://github.com/v8/v8/wiki/Getting-Started-with-Embedding) vào các chương trình viết bằng C++ khác.
+
+Mã nguồn của V8 được dùng trong node có thể xem trong thư mục [deps/v8](https://github.com/nodejs/node/tree/master/deps/v8)
+
+
+
+Có thể thử biên dịch một ví dụ về [js shell ](https://github.com/v8/v8/tree/master/samples)
+
+dùng lệnh `shell --print_code` để xem code được biên dịch ra mã thực thi
+
+thử thêm một chức năng\(lệnh\) greeting vào shell
+
+
+
 # Core module
 
-các moudule chức năng như fs, http, ... viết bằng JS
+* C++ core
+* JS core
 
-# Node api
+## Process binding
 
-Một số module chạy với C++ addon được binding bằng V8 engine
 
-[http://latentflip.com/loupe/](http://latentflip.com/loupe/)
-
-Hoạt động là các hàm chạy trực tiếp sẽ được đẩy vào call stack  
-các hàm callback thì sẽ được đẩy vào node, khi chạy tới phần callback sẽ đẩy vào callback queue  
-event loop sẽ luôn kiểm tra để thực thi các hàm trong callback queue
-
-# V8 engine
-
-Giả sử Node xử lý IO xong sẽ gọi hàm callback, các hàm callback sẽ được pass vào event queue cho V8 xử lý, xử lý xong sẽ pass về node lại
 
 # libuv
 
