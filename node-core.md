@@ -35,9 +35,10 @@ thử thêm một chức năng\(lệnh\) greeting vào shell
 
 # libuv
 
+2 thành phần quan trọng nhất
 
-
-# 
+* quản lý các kết nối IO bất đồng bộ
+* threadpool + event-loop
 
 
 
