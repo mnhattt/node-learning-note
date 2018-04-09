@@ -67,13 +67,50 @@ promise 6
 2. Sau đó tới lượt marco-task setInterval\(\) và setTimeout\(\) được thực thi, một lệnh setInterval\(\) tiếp theo sẽ được đẩy ngay sau setTimeout\(\) vì time = 0.  
    Kết quả:  setInterval =&gt; setTimeout 1
 
-3. Sau khi thực thi setTimeout\(\), promise 3, promise 4 và promise x\(setTimeout\(\)\) được đẩy vào micro-task và thực thi   
+3. Sau khi thực thi setTimeout\(\), promise 3, promise 4 và promise x\(setTimeout\(\)\) được đẩy vào micro-task và thực thi  
    Kết quả: promise 3 và promise 4 + setTimeout\(\) được đẩy qua node
 
-4. chương trình setTimeout\(\) sẽ được đẩy qua node rồi sau đó trở về queue lại nên nó sẽ xếp sau setInterval\(\)
+4. chương trình setTimeout\(\) sẽ được đẩy qua node rồi sau đó trở về queue lại nên nó sẽ xếp sau setInterval\(\)  
    Kết quả: setInterval =&gt; setTimeout 2
 
 5. Phần 5 cùng tương tự phần 3
 
+---
+
+## hình dưới minh họa thứ tự thực hiện marco task và micro task
+
 ![](/assets/micro-marco.png)
+
+### cần xem lại về process.nextTick\(\)
+
+```
+setTimeout(() => {
+    console.log('setTimeout 1')
+    process.nextTick(() => {
+        console.log('nextTick 3')
+        process.nextTick(() => {
+            console.log('nextTick 4')
+            setTimeout(() => {
+                console.log('setTimeout 2')
+                process.nextTick(() => {
+                    console.log('nextTick 5')
+                    process.nextTick(() => {
+                        console.log('nextTick 6')
+                        clearInterval(interval)
+                    })
+                })
+            }, 0)
+        })
+    })
+})
+
+process.nextTick(() => {
+    console.log('nextTick 1')
+    process.nextTick(() => {
+        console.log('nextTick 2')
+    })
+})
+```
+
+
 
