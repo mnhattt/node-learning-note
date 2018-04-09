@@ -13,5 +13,4 @@
 * [C++ Addon](c++-addon.md)
 * [Buffer](buffer.md)
 * [Demo chat-app](demo-chat-app.md)
-* [micro-macro queue](micro-macro-queue.md)
 

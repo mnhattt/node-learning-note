@@ -11,7 +11,7 @@ setTimeout(() => {
         console.log('promise 3')
     }).then(() => {
         console.log('promise 4')
-    }).then(() => {
+    }).then(() => { // chèn setInterval 
         setTimeout(() => {
             console.log('setTimeout 2')
             Promise.resolve().then(() => {
@@ -39,7 +39,7 @@ setInterval
 setTimeout 1 
 promise 3
 promise 4
-setInterval
+setInterval // chèn
 setTimeout 2
 promise 5
 promise 6
@@ -49,17 +49,18 @@ promise 6
 
 khi stack rống, event-loop quét task queue để chọn task đẩy vào stack.
 
-1. mirco-task sẽ được duyệt trước marco-task\(??\). Thứ tự ưu tiên là  
+1. mirco-task sẽ được duyệt trước marco-task\(??\). Thứ tự ưu tiên là
 
-* process.nextTick 
+* process.nextTick
 
 * promise
 
-Ở trường hợp trên thì promise 1 và promise 2 sẽ thực thi trước
+   Ở trường hợp trên thì promise 1 và promise 2 sẽ thực thi trước
 
-Sau đó tới lượt marco-task setInterval\(\) và setTimeout\(\) 
+2. Sau đó tới lượt marco-task setInterval\(\) và setTimeout\(\)
 
-setInterval\(\) ưu tiên chạy trước setTimeout\(\) \(??\)
+setInterval\(\) ưu tiên chạy trước setTimeout\(\) \(??\) =&gt; setInterval =&gt; setTimeout 1  + promise 3 =&gt; promise 4  
+3. Sau khi setTimeout\(\) chạy xôi
 
 
 
