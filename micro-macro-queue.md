@@ -83,6 +83,11 @@ promise 6
 
 ### cần xem lại về process.nextTick\(\)
 
+> the `nextTickQueue `will be **processed after the current operation completes**, regardless of the current phase of the event loop.  
+> any time you call `process.nextTick() `in a given phase, all callbacks passed to `process.nextTick() `will be resolved before the event loop continues.
+
+
+
 ```
 setTimeout(() => {
     console.log('setTimeout 1')
