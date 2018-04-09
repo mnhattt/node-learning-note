@@ -47,22 +47,20 @@ promise 6
 
 ## giải thích kết quả thực hiện
 
-khi stack rống, event-loop quét task queue để chọn task đẩy vào stack.
+1. khi stack rống, event-loop quét task queue để chọn task đẩy vào stack.
 
-1. mirco-task sẽ được duyệt trước marco-task\(??\). Thứ tự ưu tiên là
+mirco-task sẽ được duyệt trước marco-task\(??\). Thứ tự ưu tiên là
 
 * process.nextTick
 
 * promise
 
-   Ở trường hợp trên thì promise 1 và promise 2 sẽ thực thi trước
+Ở trường hợp trên thì promise 1 và promise 2 sẽ thực thi trước
 
 2. Sau đó tới lượt marco-task setInterval\(\) và setTimeout\(\)
 
 setInterval\(\) ưu tiên chạy trước setTimeout\(\) \(??\) =&gt; setInterval =&gt; setTimeout 1  + promise 3 =&gt; promise 4  
-3. Sau khi setTimeout\(\) chạy xôi
-
-
+3. Sau khi setTimeout\(\) chạy xong
 
 ![](/assets/micro-marco.png)
 
