@@ -44,5 +44,5 @@ process.on('uncaughtException', function (err) {
 
 ## DEMO
 
-![](.gitbook/assets/demo-chat-app.png)
+![](../.gitbook/assets/demo-chat-app.png)
 
