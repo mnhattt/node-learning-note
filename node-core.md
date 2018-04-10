@@ -8,7 +8,7 @@
 
 ## Core module
 
-* C++ core
+* C++ core\(native\)
 * JS core
 
 ## V8 Engine
