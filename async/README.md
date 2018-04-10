@@ -1,10 +1,4 @@
----
-description: Cơ chế hoạt động bất đồng bộ của javascript
----
-
 # Async
-
-
 
 ## \# đặt vấn đề
 

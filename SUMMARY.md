@@ -2,8 +2,8 @@
 
 * [Introduction](README.md)
 * [Node Core](node-core.md)
-* [Async](event-loop/README.md)
-  * [micro-macro queue](event-loop/micro-macro-queue.md)
+* [Async](async/README.md)
+  * [micro-macro queue](async/micro-macro-queue.md)
 * [Event](event/README.md)
   * [Event Emitter 1](event/event-emitter-1.md)
   * [Event Emitter 2](event/event-emitter-2.md)
