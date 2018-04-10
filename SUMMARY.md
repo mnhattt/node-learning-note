@@ -13,4 +13,5 @@
 * [child process](child-process.md)
 * [C++ Addon](c++-addon.md)
 * [Demo chat-app](demo-chat-app.md)
+* [process global object](process-global-object.md)
 
