@@ -1,8 +1,14 @@
+---
+description: Cơ chế hoạt động bất đồng bộ của javascript
+---
+
 # Async
+
+
 
 ## \# đặt vấn đề
 
-1. **vì sao setTimeout\( \(\), 0\) hay setImmediate\(\) vẫn chạy sau ham**
+### 1. **vì sao setTimeout\( \(\), 0\) hay setImmediate\(\) vẫn chạy sau ham**
 
 ```text
 setImmediate(function () {
@@ -44,6 +50,8 @@ setImmediate\(\) được xác định để chạy đoạn mã ngay khi pol
 Trong khi setTimeout\(\) thì xác định đoạn mã sẽ được chạy sau ÍT NHẤT bao lâu. Nếu setTimeout = 0 thì nó không có nghĩa là chạy ngay mà nó có nghĩa là đoạn mã đó sẽ được đẩy vào callback queue ngay tức khác, và nó phải chờ các hàng đợi phía trước trống mới được thực thi\(đẩy vào call stack\)
 
 trong khi đó `process.nextTick()` có khả năng đẩy hàm callback vào vị trí đầu tiên trong hàng đợi.
+
+## về bản chất js thực thi code đồng độ, chạy tuần tự với 1 luồng trong stack. JS thực thi bất đồng bộ được là nhờ web api/node api và cơ chế task queue + event loop\(thành phần của libuv\)
 
 ## \# event loop
 
