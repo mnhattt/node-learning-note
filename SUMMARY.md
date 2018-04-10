@@ -1,16 +1,16 @@
-# Summary
+# Table of contents
 
 * [Introduction](README.md)
 * [Node Core](node-core.md)
-* [Event loop](event-loop.md)
-* [micro-macro queue](micro-macro-queue.md)
-* [Event](event.md)
-* [Event Emitter 1](event-emitter.md)
-* [Event Emitter 2](event-emitter-2.md)
+* [Async](event-loop/README.md)
+  * [micro-macro queue](event-loop/micro-macro-queue.md)
+* [Event](event/README.md)
+  * [Event Emitter 1](event/event-emitter-1.md)
+  * [Event Emitter 2](event/event-emitter-2.md)
 * [TCP với net module](tcp-voi-net-module.md)
-* [Stream](stream.md)
+* [Stream](stream/README.md)
+  * [Buffer](stream/buffer.md)
 * [child process](child-process.md)
 * [C++ Addon](c++-addon.md)
-* [Buffer](buffer.md)
 * [Demo chat-app](demo-chat-app.md)
 

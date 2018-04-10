@@ -1,4 +1,6 @@
-spawn,  fork, ...
+# child process
 
-![](/assets/child_process.png)
+spawn, fork, ...
+
+![](.gitbook/assets/child_process.png)
 

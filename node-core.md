@@ -1,17 +1,17 @@
-# ![](/assets/node-core.png)
+# Node Core
 
-# cụ thể hơn
+![](.gitbook/assets/node-core.png)
 
-# ![](/assets/node-core-2.png)
+## cụ thể hơn
 
-# Core module
+![](.gitbook/assets/node-core-2.png)
+
+## Core module
 
 * C++ core
 * JS core
 
----
-
-# V8 Engine
+## V8 Engine
 
 V8 là một javascrpit engine dùng để biên dịch ra mã thực thi trên vi xử lý. Do được viết bằng C++ nên nó có thể được dùng độc lập hoặc được [nhúng](https://github.com/v8/v8/wiki/Getting-Started-with-Embedding) vào các chương trình viết bằng C++ khác.
 
@@ -25,20 +25,14 @@ thử thêm một chức năng\(lệnh\) greeting vào shell
 
 ### chú ý là dòng `#include <include/v8.h>`
 
-# 
-
-Ở trên đã thấy cách dùng V8, thì việc thực thi code js giống như ta nhập vào shell, nó sẽ được biên dịch ra mã máy và chạy. Tuy nhiên không phải thư viện nào cũng cần binding JS với C++ mà chỉ  thuần túy chứa các hàm.
+Ở trên đã thấy cách dùng V8, thì việc thực thi code js giống như ta nhập vào shell, nó sẽ được biên dịch ra mã máy và chạy. Tuy nhiên không phải thư viện nào cũng cần binding JS với C++ mà chỉ thuần túy chứa các hàm.
 
 ### chú ý dòng  `const binding = process.binding('');`
 
----
-
-# libuv
+## libuv
 
 2 thành phần quan trọng nhất
 
 * quản lý các kết nối IO bất đồng bộ
 * threadpool + event-loop
-
-
 

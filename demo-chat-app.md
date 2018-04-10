@@ -1,10 +1,8 @@
-
+# Demo chat-app
 
 Tạo 1 TCP server và lắng nghe các kết nối tới
 
-
-
-```js
+```javascript
 var server = require('net').createServer()
 
 let counter = 0
@@ -44,9 +42,7 @@ process.on('uncaughtException', function (err) {
 });
 ```
 
-
-
 ## DEMO
 
-![](/assets/demo-chat-app.png)
+![](.gitbook/assets/demo-chat-app.png)
 

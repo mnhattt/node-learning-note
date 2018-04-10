@@ -1,4 +1,4 @@
-# Event Emitter
+# Event Emitter 1
 
 1. Tự viết event-emiiter
 2. Kế thừa
@@ -53,9 +53,7 @@ for (var event of events) {
 }
 ```
 
-### 
-
-### 2. Kế thừa từ module event
+## 2. Kế thừa từ module event
 
 ```javascript
 // DÙNG CLASS
@@ -81,6 +79,4 @@ dialog.on('hello', function (data) {
 
 dialog.sayHello('nhat')
 ```
-
-
 
